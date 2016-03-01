@@ -5,3 +5,4 @@
 + findArc function
 + distTwoDimension function
 + roundToDecimal function
++ tenToPowerOf functio 
