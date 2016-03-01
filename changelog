@@ -3,5 +3,6 @@ Additions/Improvements
 + degrees inverse sine
 + degrees sine
 + fixes to some previously existing functions
-+ documentation on most functions
++ documentation on all 1.0 functions
 + degRadConversion function 
++ findArc function
