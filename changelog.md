@@ -6,3 +6,4 @@ Additions/Improvements
 + documentation on all 1.0 functions
 + degRadConversion function 
 + findArc function
++ distTwoDimension
