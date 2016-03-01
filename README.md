@@ -1,6 +1,8 @@
 # JavaScript-Math-Extension
-Version 1.0!
-An extension to the JavaScript math class.  This is an ongoing and experimental project.  
+## Version 1.1!
+### Published March 1st.
+
+An extension to the JavaScript math object.  Basically, a set of helpful math functions.  This is an ongoing and experimental project.  
 If you are reading this sentence, you are witnessing the very start.
 Keep in mind I am just a student, and I only work on this in my freetime, but lucky for you, I have a lot of freetime!
 But really though, I have no offical education or degrees with programming, and there are no guarentees this will work or that the formulas are correct.
