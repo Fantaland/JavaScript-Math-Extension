@@ -1,5 +1,7 @@
+## Additions/Improvements
 + partial addition of law of sine
 + degrees inverse sine
 + degrees sine
 + fixes to some previously existing functions
 + documentation on most functions
++ degRadConversion function 
