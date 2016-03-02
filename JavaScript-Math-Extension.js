@@ -1,18 +1,18 @@
-//Written for the JavaScript Math Extension Project on 3/1/16 for Version 1.1.1
+//Written for the JavaScript Math Extension Project on 3/2/16 for Version 1.1.2
 //General Functions
 //Convert radians to degrees
-function Math.radToDeg(radians) 
+Math.radToDeg = function(radians) 
 {
 	return radians * (180 / Math.PI);
 }
 
 //Convert degrees to radians
-function Math.degToRad(degrees) 
+Math.degToRad = function(degrees) 
 {
 	return degrees * (Math.PI / 180);
 }
 
-function Math.degRadConversion(n, type) {
+Math.degRadConversion = function(n, type) {
 	var ans;
 	
 	if(type == 0 || type = 'degToRad') { //If the conversion should be degrees to radians
@@ -27,7 +27,7 @@ function Math.degRadConversion(n, type) {
 }
 
 //Rounds a number to the specified decimal.
-function Math.roundToDecimal(n, d)
+Math.roundToDecimal = function(n, d)
 {
 	//n is the number getting rounded
 	//d is the decimal point getting rounded to. (10 = tenth, 100 = hundreth, 1000 = thousandth, and so on).
@@ -35,7 +35,7 @@ function Math.roundToDecimal(n, d)
 }
 
 //Takes 10 to the power of a specified number.
-function Math.tenToPowerOf(n)
+Math.tenToPowerOf = function(n)
 {
 	//n is the number that 10 is multiplied to the power of.
 	return Math.pow(10, n);
@@ -44,13 +44,13 @@ function Math.tenToPowerOf(n)
 //COSINE SECTION
 //Cosine degree functions.  While JavaScript has a Cosine function, it is in radians.  This is conversion to degrees.
 // Custom cos function for degrees opposed to default radian cos.
-function Math.cosDegrees = function(degrees) //Original label was radians
+Math.cosDegrees = function(degrees) //Original label was radians
 {
 	return Math.cos(degrees / 180 * Math.PI);
 };
 
 //Inverse cosine in degrees.
-function Math.acosDegrees = function(radians)
+Math.acosDegrees = function(radians)
 {
 	return Math.acos(radians) * 180 / Math.PI; //Convert radians to 
 };
@@ -58,7 +58,7 @@ function Math.acosDegrees = function(radians)
 //Law of Cosine
 //Makes use of custom cos functions above.
 //For finding missing side when 1 angle and 2 sides are known.  (Uses law of cosine)
-function Math.lawCosSide(a, b, d)
+Math.lawCosSide = function(a, b, d)
 {
 	//a = side a
 	//b = side b
@@ -80,7 +80,7 @@ function Math.lawCosSide(a, b, d)
 }
 
 //Law of cosine for finding angle when all sides are known (Uses law of cos)
-function Math.lawCosAngle(a, b, c)
+Math.lawCosAngle = function(a, b, c)
 {
 	//a, b and c are all sides.
 	
@@ -97,7 +97,8 @@ function Math.lawCosAngle(a, b, c)
 
 //CIRCLES SECTION
 //Find an arc in a circle.  Note this is an untested function.
-function Math.findArc(x, r) {
+Math.findArc = function(x, r) 
+{
 	//x is ratio of arc to circle
 	//r is degree measure of arc
 	var equation = 360 / x * 2 * Math.PI * r;
@@ -105,9 +106,16 @@ function Math.findArc(x, r) {
 	return equation;
 }
 
+Math.findAreaCircle = function(r) 
+{
+	//r is radius
+	return Math.PI * (r * r);
+}
+
 //CORDINATE PLANES SECTION
 //Find the distance between two points
-function Math.distTwoDimension(a, b, x, y) {
+Math.distTwoDimension = function(a, b, x, y) 
+{
 	//a and b are coords for point 1
 	//x and y are coords for point 2
 	var abSqr = Math.sqr(a - b);
