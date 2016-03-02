@@ -1,8 +1,10 @@
 # JavaScript-Math-Extension
-Version 1.0!
-An extension to the JavaScript math class.  This is an ongoing and experimental project.  
+## Version 1.1! (Development Version)
+### Published March 1st.
+
+An extension to the JavaScript math object.  Basically, a set of helpful math functions.  This is an ongoing and experimental project.  
 If you are reading this sentence, you are witnessing the very start.
-Keep in mind I am just a student, and I only work on this in my freetime, but lucky for you, I have a lot of freetime!
+Keep in mind I am just a student, and I only work on this in my freetime... but lucky for you, I have a lot of freetime!
 But really though, I have no offical education or degrees with programming, and there are no guarentees this will work or that the formulas are correct.
 What I'm trying to say is if you are considering using this on a spacecraft, don't do it!
 However, I think this will work (mostly) and hopefully it can help you out in some way!
