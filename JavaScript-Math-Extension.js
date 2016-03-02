@@ -1,4 +1,4 @@
-//Written for the JavaScript Math Extension Project on 3/1/16 for Version 1.1.1
+//Written for the JavaScript Math Extension Project on 3/2/16 for Version 1.1.2
 //General Functions
 //Convert radians to degrees
 Math.radToDeg = function(radians) 
