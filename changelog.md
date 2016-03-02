@@ -1,2 +1,2 @@
 ##Additions/Improvements
-+ Fixes to various new V1.1 functions 
++ Fixes & compatibility improvements to all functions 
