@@ -1,4 +1,4 @@
-//Written for the JavaScript Math Extension Project on 2/29/16 for Version 1.1
+//Written for the JavaScript Math Extension Project on 3/1/16 for Version 1.1.1
 //General Functions
 //Convert radians to degrees
 function Math.radToDeg(radians) 
@@ -13,26 +13,32 @@ function Math.degToRad(degrees)
 }
 
 function Math.degRadConversion(n, type) {
+	var ans;
+	
 	if(type == 0 || type = 'degToRad') { //If the conversion should be degrees to radians
-		Math.degToRad(n); //Convert n (degrees) to radians
+		ans = Math.degToRad(n); //Convert n (degrees) to radians
 	}
 	
 	else if(type == 1 || type = 'radToDeg') { //If the conversion should be radians to degrees
-		Math.radToDeg(n); //Convert n (radians) to degrees
+		ans = Math.radToDeg(n); //Convert n (radians) to degrees
 	}
+	
+	return ans;
 }
 
 //Rounds a number to the specified decimal.
-function Math.roundToDecimal(n, d) {
+function Math.roundToDecimal(n, d)
+{
 	//n is the number getting rounded
 	//d is the decimal point getting rounded to. (10 = tenth, 100 = hundreth, 1000 = thousandth, and so on).
-	Math.round(n * d) / d;
+	return Math.round(n * d) / d;
 }
 
 //Takes 10 to the power of a specified number.
-function Math.tenToPowerOf(n) {
+function Math.tenToPowerOf(n)
+{
 	//n is the number that 10 is multiplied to the power of.
-	Math.pow(10, n);
+	return Math.pow(10, n);
 }
 
 //COSINE SECTION
