@@ -6,3 +6,4 @@
 + Added findRadiusCircleArea function
 + Added findRadiusCircleCircum function
 + Fixed degRadConversion function
++ Added findCircleMissingCentralAngle function
