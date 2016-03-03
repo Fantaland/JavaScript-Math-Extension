@@ -1,6 +1,6 @@
 # JavaScript-Math-Extension
-## Version 1.1.2!
-### Published March 2nd.
+## Version 1.1.3!
+### Published March 3rd, 2016
 
 An extension to the JavaScript math object.  Basically, a set of helpful math functions.  This is an ongoing and experimental project.  
 If you are reading this sentence, you are witnessing the very start.
@@ -11,3 +11,5 @@ However, I think this will work (mostly) and hopefully it can help you out in so
 My goal of this project is to help people and to have fun doing so.  Feel free to use a copy for your own project, whatever it may be.
 Finally, check back for updates often, as I will be updating this somewhat frequently.
 Thanks!
+
+If you are interested in learning how to use the extension, go to the wiki on GitHub!
