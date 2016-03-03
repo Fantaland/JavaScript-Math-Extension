@@ -1,4 +1,4 @@
-//Written for the JavaScript Math Extension Project on 3/2/16 for Version 1.1.2
+//Written for the JavaScript Math Extension Project on 3/3/16 for Version 1.1.3
 //General Functions
 //Convert radians to degrees
 Math.radToDeg = function(radians) 
@@ -15,11 +15,12 @@ Math.degToRad = function(degrees)
 Math.degRadConversion = function(n, type) {
 	var ans;
 	
-	if(type == 0 || type = 'degToRad') { //If the conversion should be degrees to radians
+	//If the conversion should be degrees to radians
+	if(type == 0 || type == 'degToRad') { 
 		ans = Math.degToRad(n); //Convert n (degrees) to radians
 	}
 	
-	else if(type == 1 || type = 'radToDeg') { //If the conversion should be radians to degrees
+	else if(type == 1 || type == 'radToDeg') { //If the conversion should be radians to degrees
 		ans = Math.radToDeg(n); //Convert n (radians) to degrees
 	}
 	
@@ -97,19 +98,59 @@ Math.lawCosAngle = function(a, b, c)
 
 //CIRCLES SECTION
 //Find an arc in a circle.  Note this is an untested function.
-Math.findArc = function(x, r) 
+Math.findArc = function(c, r) 
 {
-	//x is ratio of arc to circle
-	//r is degree measure of arc
-	var equation = 360 / x * 2 * Math.PI * r;
+	//c is the angle in degrees
+	//r is radius
+	var equation = 2 * Math.PI * r * (c / 360);
 	
 	return equation;
 }
 
+//Finds area of circle
 Math.findAreaCircle = function(r) 
 {
 	//r is radius
 	return Math.PI * (r * r);
+}
+
+//Finds the radius of circle with the area
+Math.findRadiusCircleArea = function(a)
+{
+	//a is area
+	return Math.sqrt(a / Math.PI);
+}
+
+//Find the radius of the circle with the circumference
+Math.findRadiusCircleCircum = function(c)
+{
+	//c is circumference
+	return c / 2 / Math.PI;
+}
+
+//Finds diameter of circle
+Math.findDiameterCircle = function(r) 
+{
+	//r is radius
+	return n * 2;
+}
+
+Math.findCircumference = function(r) 
+{
+	//r is radius
+	return 2 * Math.PI * r;
+}
+
+//Finds a missing angle within a circle
+Math.findCircleMissingCentralAngle = function()
+{
+	var total;
+	
+	for (var i = 0; i< arguments.length; i++) {
+		total += ary[i];
+	}
+	
+	return 360 - (total);
 }
 
 //CORDINATE PLANES SECTION
@@ -118,9 +159,9 @@ Math.distTwoDimension = function(a, b, x, y)
 {
 	//a and b are coords for point 1
 	//x and y are coords for point 2
-	var abSqr = Math.sqr(a - b);
-	var xySqr = Math.sqr(x - y);
-	var ans = Math.sqrt(abSqr + xySqr);
+	var abSqr = Math.sqr(a - x);
+	var xySqr = Math.sqr(b - y);
+	var ans = Math.sqrt(axSqr + bySqr);
 	
 	return ans;
 }
